@@ -2,8 +2,9 @@
     "extension": "php",
     "functions": {
         "exec": {
-            "name": "",
-            "exploits": [""]
+            "name": "Execute an external program",
+            "exploits": ["Command Injection"],
+            "source": "https://www.php.net/manual/en/function.exec.php"
         }
     }
 }
