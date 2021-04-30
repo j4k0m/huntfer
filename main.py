@@ -10,13 +10,15 @@ print("""\n __ __  __ __  ____   ______  _____  ___  ____
 |__|__| \__,_||__|__|  |__|  |__| |_____||__|\_|\n""")
 
 
+CONFIG = json.load(open("./config.json", "r"))
 
-TEMPLATES_PATH =  json.load(open("./config.json", "r"))["TEMPLATES_PATH"]
+TEMPLATES_PATH =  CONFIG["TEMPLATES_PATH"]
+DEFAULT_REGEX = CONFIG["DEFAULT_REGEX"]
 
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-t', type=str, help="Template name to use, example: php, js...", required=True)
-parser.add_argument('-r', type=str, help="Regex to use, default: ", default="")
+parser.add_argument('-r', type=str, help=f"Regex to use, default: {DEFAULT_REGEX}", default=f"{DEFAULT_REGEX}")
 
 args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 

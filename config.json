@@ -1,3 +1,4 @@
 {
-    "TEMPLATES_PATH": "templates"
+    "TEMPLATES_PATH": "templates",
+    "DEFAULT_REGEX": ""
 }
