@@ -1,0 +1,9 @@
+{
+    "extension": "php",
+    "functions": {
+        "exec": {
+            "name": "",
+            "exploits": [""]
+        }
+    }
+}
