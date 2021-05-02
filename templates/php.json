@@ -6,7 +6,7 @@
             "exploits": ["Command Injection"]
         },
         "shell_exec": {
-            "name": "Execute an external program",
+            "name": "Execute command via shell and return the complete output",
             "exploits": ["Command Injection"]
         },
         "eval": {
