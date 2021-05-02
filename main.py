@@ -1,4 +1,4 @@
-#!/usr/bin/pythno3
+#!/usr/bin/python3
 import re, argparse, json, sys, os
 
 def scan_file(_file):
