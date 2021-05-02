@@ -17,7 +17,7 @@ git clone https://github.com/RyouYoo/Huntfer.git
 
 ## Guide:
 
-```bash
+```
 __ __  __ __  ____   ______  _____  ___  ____
 |  |  ||  |  ||    \ |      ||     |/  _]|    \
 |  |  ||  |  ||  _  ||      ||   __/  [_ |  D  )
