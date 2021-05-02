@@ -13,7 +13,7 @@ def scan_file(_file):
             if RESULT:
                 FUN = RESULT[0].split("(")[0]
                 if FUN in list(TEMPLATE["functions"].keys()):
-                    print(f"{_file} -> Found [{FUN}] in line: {str(i + 1)}, Name: {TEMPLATE['functions'][FUN]['name']}, Potential attacks: {' '.join(i for i in TEMPLATE['functions'][FUN]['exploits'])}")
+                    print(f"{_file} -> Found [{FUN}] in line: {str(i + 1)}, Name: {TEMPLATE['functions'][FUN]['name']}, Potential attacks: {('' if len(TEMPLATE['functions'][FUN]['exploits']) < 2 else ', ').join(i for i in TEMPLATE['functions'][FUN]['exploits'])}")
 
 print("""\n __ __  __ __  ____   ______  _____  ___  ____  
 |  |  ||  |  ||    \ |      ||     |/  _]|    \ 
