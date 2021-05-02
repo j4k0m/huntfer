@@ -1,5 +1,13 @@
 #!/usr/bin/pythno3
-import re, argparse, json, sys
+import re, argparse, json, sys, glob
+
+def scan_file(_file):
+    try:
+        FILE_CONTENT = open(_file, "r").readlines()
+    except FileNotFoundError as e:
+        print(e)
+    else:
+        pass
 
 print("""\n __ __  __ __  ____   ______  _____  ___  ____  
 |  |  ||  |  ||    \ |      ||     |/  _]|    \ 
@@ -18,7 +26,9 @@ DEFAULT_REGEX = CONFIG["DEFAULT_REGEX"]
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-t', type=str, help="Template name to use, example: php, js...", required=True)
-parser.add_argument('-r', type=str, help=f"Regex to use, default: {DEFAULT_REGEX}", default=f"{DEFAULT_REGEX}")
+parser.add_argument('-r', type=str, help=f"Regex to use, default: {DEFAULT_REGEX}.", default=f"{DEFAULT_REGEX}")
+parser.add_argument('-dr', type=str, help=f"Directory to scan.")
+parser.add_argument('-f', type=str, help=f"Single file to scan.")
 
 args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 
@@ -29,4 +39,8 @@ if __name__ == "__main__":
     except FileNotFoundError as e:
         print(e)
     else:
-        print(TEMPLATE)
+        # print(TEMPLATE)
+        if args.dr:
+            pass
+        elif args.f:
+            pass
