@@ -1,5 +1,5 @@
 #!/usr/bin/pythno3
-import re, argparse, json, sys, glob
+import re, argparse, json, sys, os
 
 def scan_file(_file):
     try:
@@ -45,8 +45,10 @@ if __name__ == "__main__":
     except FileNotFoundError as e:
         print(e)
     else:
-        # print(TEMPLATE)
         if args.dr:
-            pass
+            for root, dirs, files in os.walk(args.dr, topdown=False):
+                for name in files:
+                    if name.split(".")[-1] == TEMPLATE["extension"]:
+                        scan_file(os.path.join(root, name))
         elif args.f:
             scan_file(args.f)
