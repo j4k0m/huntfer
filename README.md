@@ -3,6 +3,6 @@ In progress...
 
 # To do
 
-[ ] Add Threads
-[ ] Html export
-[ ] Colros
+- [ ] Add Threads
+- [ ] Html export
+- [ ] Colors
