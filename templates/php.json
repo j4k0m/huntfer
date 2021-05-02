@@ -4,6 +4,14 @@
         "exec": {
             "name": "Execute an external program",
             "exploits": ["Command Injection"]
+        },
+        "shell_exec": {
+            "name": "Execute an external program",
+            "exploits": ["Command Injection"]
+        },
+        "eval": {
+            "name": "Evaluate a string as PHP code",
+            "exploits": ["Code Injection"]
         }
     }
 }

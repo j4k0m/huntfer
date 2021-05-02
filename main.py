@@ -7,7 +7,13 @@ def scan_file(_file):
     except FileNotFoundError as e:
         print(e)
     else:
-        pass
+        for i in range(len(FILE_CONTENT)):
+            line = FILE_CONTENT[i]
+            RESULT = re.search(args.r, line)
+            if RESULT:
+                FUN = RESULT[0].split("(")[0]
+                if FUN in list(TEMPLATE["functions"].keys()):
+                    print(f"{_file} -> Found [{FUN}] in line: {str(i + 1)}, Name: {TEMPLATE['functions'][FUN]['name']}, Potential attacks: {' '.join(i for i in TEMPLATE['functions'][FUN]['exploits'])}")
 
 print("""\n __ __  __ __  ____   ______  _____  ___  ____  
 |  |  ||  |  ||    \ |      ||     |/  _]|    \ 
@@ -43,4 +49,4 @@ if __name__ == "__main__":
         if args.dr:
             pass
         elif args.f:
-            pass
+            scan_file(args.f)

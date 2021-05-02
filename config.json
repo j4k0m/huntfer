@@ -1,4 +1,4 @@
 {
     "TEMPLATES_PATH": "templates",
-    "DEFAULT_REGEX": ""
+    "DEFAULT_REGEX": "^\\w.*[(.)]"
 }
