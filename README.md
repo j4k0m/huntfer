@@ -6,7 +6,7 @@ An automation tool to help you to find weak functions in your target source code
 
 - Support multi languages with templates system, so you can add your own template.
 - Scanning a single file or a whole directory.
-- You can use your own regex to find functions in the source code.
+- Changeable regex.
 
 ## Install:
 
