@@ -46,6 +46,19 @@ python3 main.py -t php -f test.php
 
 You contribute by adding your own template or functions.
 
+### Template Example:
+```json
+{
+    "extension": "php",
+    "functions": {
+        "exec": {
+            "name": "Execute an external program",
+            "exploits": ["Command Injection"]
+        }
+        .......
+}
+```
+
 ## To do:
 
 - [ ]  Add Threads Support
