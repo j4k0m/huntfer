@@ -23,7 +23,7 @@
         },
         "assert": {
             "name": "Checks if assertion is false",
-            "exploits": ["Code Injeection"]
+            "exploits": ["Code Injection"]
         },
         "preg_replace": {
             "name": "Perform a regular expression search and replace",
