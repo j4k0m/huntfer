@@ -20,6 +20,14 @@
         "include": {
             "name": "Read and execute internal files in the server",
             "exploits": ["Local file inclution"]
+        },
+        "assert": {
+            "name": "Checks if assertion is false",
+            "exploits": ["Code Injeection"]
+        },
+        "preg_replace": {
+            "name": "Perform a regular expression search and replace",
+            "exploits": ["Code Injection"]
         }
     }
 }
