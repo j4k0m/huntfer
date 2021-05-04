@@ -1,3 +1,4 @@
+![alt cover](https://media.discordapp.net/attachments/823597727887261768/839194420447281172/New_Project_1.png)
 # Huntfer
 
 An automation tool to help you to find weak functions in your target source code for potential attacks.
