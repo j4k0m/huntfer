@@ -28,6 +28,18 @@
         "preg_replace": {
             "name": "Perform a regular expression search and replace",
             "exploits": ["Code Injection"]
+        },
+        "pcntl_exec": {
+            "name": "Executes a program",
+            "exploits": ["Command Injection"]
+        },
+        "proc_open": {
+            "name":"Similar to popen() but greater degree of control",
+            "exploits": ["Command Injection"]
+        },
+        "popen": {
+            "name":"Opens read or write pipe to process of a command",
+            "exploits": ["Command Injection"]
         }
     }
 }
