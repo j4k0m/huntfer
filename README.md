@@ -59,9 +59,3 @@ You contribute by adding your own template or functions.
         .......
 }
 ```
-
-## To do:
-
-- [ ]  Add Multi Threads Support
-- [ ]  Html Report Export
-- [ ]  Colors
